@@ -15,7 +15,7 @@ Instructions are pretty straight-forward. Take the PNG design which is displayed
 - **Rebuilding the entire project by adopting a modular based approach**.
   - Using Sass 
   - Getting rid of the Bootstrap framework as I'd like to have a leaner code.
-  - Adopting the [SMACSS!](https://smacss.com/) method (Scalable Modular Architecture for CSS).
-  - Making use the [BEM!](http://getbem.com/) naming convention method.
+  - Adopting the [SMACSS](https://smacss.com/) method (Scalable Modular Architecture for CSS).
+  - Making use the [BEM](http://getbem.com/) naming convention method.
 
 ![Image of the PNG design](https://github.com/RonGootman/DevShotsDemo/blob/master/DevShots.png)
