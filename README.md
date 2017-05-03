@@ -5,6 +5,10 @@ You are checking out a mini project I got (November - 2016) while taking my Deve
 
 Although I achieved the desired visual output, there are always ways to improve and modify my code better as I progress and expand my Front End Development arsenal.
 
+You can check the current final output at this link and compare it to the original design.
+
+[link to final output](https://rongootman.github.io/DevShotsDemo/)
+
 ## Project Instructions
 Instructions are pretty straight-forward. Take the PNG design which is displayed below (in real life it would probably be a PSD format) and convert it into a real webpage that runs on the browser. 
 
