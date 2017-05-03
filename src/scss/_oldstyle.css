@@ -1,0 +1,524 @@
+/*
+Custom 5 Column for Bootstrap
+*/
+
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: right;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: right;
+    }
+}
+
+
+/*
+General
+*/
+
+body {
+    font-family: 'Open Sans Hebrew', 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 56px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+.section-content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+hr {
+    border: 0;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.article-b-margin {
+    margin-bottom: 60px;
+}
+
+.section-reset-bottom {
+    margin-bottom: 0;
+}
+
+.dotted {
+    border-bottom: 1px dotted #BEBEBE;
+}
+
+
+/*.netcraft-logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    font-size: 0;
+    text-align: start;
+}*/
+
+
+/*
+Repetitive Colors
+*/
+
+.beige-color {
+    background-color: #949381;
+}
+
+.black-color {
+    background-color: #282828;
+}
+
+.gray1-color {
+    background-color: #E6E6E6;
+}
+
+.gray2-color {
+    background-color: #DCDCDC;
+}
+
+.white-color {
+    background-color: #FFFFFF;
+}
+
+.white-font {
+    color: #FFFFFF;
+}
+
+
+/*
+Header Section
+*/
+
+.top-bar h2 {
+    color: #B5B5B5;
+    font-size: 28px;
+    margin: 40px 0 30px;
+}
+
+.top-bar .netcraft-logo {
+    background-image: url("../img/netcraft-logo.png");
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 30px;
+    display: block;
+    background-size: auto 22px;
+    background-position: center right;
+    /*Temporary*/
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    font-size: 0;
+    text-align: start;
+}
+
+.banner h1 {
+    text-shadow: 0px 1px 2px rgba(75, 74, 64, 1);
+}
+
+.banner p {
+    font-size: 24px;
+    color: #282828;
+    text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+
+/*
+Navigation
+*/
+
+nav {
+    position: absolute;
+    font-family: 'Assistant', sans-serif;
+    left: 0;
+    top: 100px;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+nav h3 {
+    font-size: 26px;
+    color: #EDEDED;
+    padding: 15px 25px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav ul>li {
+    /*padding: 8px 25px;*/
+    background-color: #FFFFFF;
+    border-bottom: 1px dotted grey;
+}
+
+nav ul>li:last-child {
+    border-bottom: 0;
+}
+
+nav ul>li.active {
+    background-color: #FFE022;
+}
+
+nav ul>li>a {
+    color: #000000;
+    padding: 8px 25px;
+    display: block;
+}
+
+
+/*
+Lectures
+*/
+
+#lectures {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.section-header>h2 {
+    position: relative;
+    /*padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted gray;*/
+}
+
+.hr-30px {
+    margin-top: -15px;
+    margin-bottom: 14px;
+}
+
+.hr-60px {
+    margin-top: -30px;
+    margin-bottom: 29px;
+}
+
+.lec-timeframe {
+    font-size: 18px;
+    display: block;
+}
+
+
+/*
+WhiteBoxes
+*/
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+}
+
+.whitebox {
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 300px;
+    padding: 30px 20px;
+    border-radius: 40px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blue-bubble {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.blue-bubble>img {
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    z-index: 5;
+}
+
+.blue-bubble>h4 {
+    color: #3A2223;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 10;
+}
+
+.whitebox .blue-bubble>.bubble-sub {
+    color: #7C7A77;
+    font-size: 18px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/*
+Location
+*/
+
+#location .section-header>h2 {
+    margin-bottom: 0px;
+}
+
+#location .section-header>h2>span {
+    font-size: 14px;
+    color: #737373;
+    font-weight: 600;
+}
+
+.event-address {
+    margin-top: 30px;
+}
+
+.event-address p, .event-timing p {
+    margin-bottom: 0px;
+}
+
+.event-address p {
+    font-size: 16px;
+}
+
+#location hr {
+    border-bottom: solid 1px #AAA9AA;
+}
+
+.event-timing p {
+    display: inline-block;
+}
+
+.event-timing .start-time {
+    width: 70px;
+    font-size: 1.2em;
+    line-height: 17px;
+}
+
+.event-timing .clock-timing {
+    font-size: 2.5em;
+    vertical-align: top;
+    line-height: 1;
+    color: #737373;
+}
+
+#location ol {
+    padding: 0;
+    list-style-type: none;
+}
+
+#location ol li {
+    counter-increment: step-counter;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+#location ol li::before {
+    content: counter(step-counter)".";
+    font-size: 20px;
+    color: #737373;
+    margin-left: 5px;
+}
+
+.direction-map>img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.direction-map>span {
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+}
+
+.direction-map>span a {
+    color: #8F8F8F;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+
+/*
+registration
+*/
+
+.section-header .highlighted-header {
+    color: #FFDD0F;
+}
+
+#registration {
+    color: #FFFFFF;
+}
+
+#registration article h4 {
+    margin-bottom: 5px;
+}
+
+#registration hr {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.sign-up__form-group {
+    margin-bottom: 10px;
+}
+
+.sign-up label {
+    float: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 0px;
+}
+
+.sign-up input, .sign-up button {
+    float: left;
+    width: 70%;
+    height: 40px;
+    padding: 0 15px;
+}
+
+.sign-up input {
+    background-color: #F1F1F1;
+}
+
+.sign-up input::-webkit-input-placeholder {
+    color: #656565;
+    font-weight: 200;
+}
+
+.sign-up input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #656565;
+    font-weight: 200;
+}
+
+.sign-up input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #656565;
+    font-weight: 200;
+}
+
+.sign-up input:-ms-input-placeholder {
+    color: #656565;
+    font-weight: 200;
+}
+
+.sign-up button {
+    background-color: #4D4D4D;
+    border-bottom: 3px solid #3C3C3C;
+    font-size: 20px;
+}
+
+
+/*
+Practical-Info
+*/
+
+#practical-info img {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*
+Footer
+*/
+
+#about-us {
+    color: #FFFFFF
+}
+
+.footer-title-bar {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.footer-title-bar h2 {
+    margin: 0;
+    padding: 15px 0;
+}
+
+
+/*
+Media Queries
+*/
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    /*Lectures-responsive*/
+    .lec-timeframe {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+    }
+    .sign-up input, .sign-up button {
+        width: 80%;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    /*Lectures-responsive*/
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 990px;
+    }
+}

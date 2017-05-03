@@ -1,0 +1,77 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+// Element Reset
+
+%element-reset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// Nav Items
+
+%nav-item-disp {
+  background-color: $white;
+  border-bottom: 1px dotted $wet-asphalt;
+}
+
+%nav-item-link {
+  padding: em(8px, 20px) em(25px, 20px);
+  color: $mine-shaft;
+  display: block;
+}
+
+%nav-item-on {
+  background-color: $candlelight;
+}
+
+//Headlines
+
+%header-jumbo{
+  font-size: em(56px);
+  margin-top: 0;
+  margin-bottom: em(40px, 56px);
+}
+
+%header-primary{
+  font-size: em(30px);
+	margin-top: 0;
+	margin-bottom: em(30px, 30px);
+}
+
+%header-secondary{
+  font-size: em(22px);
+	margin-top: 0;
+}
+
+%header-default {
+  color: $mine-shaft
+}
+
+%header-white {
+  color: $white;
+}
+
+%header-candle {
+  color: $candlelight;
+}
+
+// Buttons
+
+%btn {
+  border-bottom: 3px solid darken($wet-asphalt, 20%);
+  display: inline-block;
+  text-align: center;
+  font-size: em(20px);
+  font-family: $font-family--primary;
+}
+
+// Form Input Width
+
+%input-btn-config {
+  float: left;
+  width: 70%;
+  height: 40px;
+}

@@ -1,0 +1,38 @@
+// ==========================================================================
+// Form Elements
+// ==========================================================================
+
+.form {
+
+  @include e(row) {
+    margin-bottom: em(10px, 14px);
+    @extend %clearfix;
+  } //form__row
+
+  @include e(label) {
+    float: right;
+    font-weight: $font-weight--medium;
+    font-size: em(16px);
+    line-height: (40px / 16px);
+    margin-bottom: 0;
+  } // label
+
+  @include e(input) {
+
+    font-weight: $font-weight--thin;
+    font-family: $font-family--primary;
+    color: $mine-shaft;
+    @extend %input-btn-config;
+
+    &:focus {
+      border: 0;
+      background-color: lighten($gray-mercury, 2%);
+    } // input:focus
+  } // form__input
+
+  @include e(btn) {
+    @extend %btn;
+    @extend %input-btn-config;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: em(20px);
+
+  @include e(item) {
+    @extend %nav-item-disp;
+
+    a{
+      @extend %nav-item-link;
+    } //a
+
+    @include m(selected){
+      @extend %nav-item-disp;
+      @extend %nav-item-on;
+      a{
+        @extend %nav-item-link;
+      }
+    } //%--selected
+  } //&__item
+} //.nav

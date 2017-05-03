@@ -1,0 +1,30 @@
+.header {
+  &-jumbo {
+    @extend %header-jumbo;
+  }
+
+  &-primary {
+
+    @extend %header-primary;
+
+    @include m(default){
+      @extend %header-primary;
+      @extend %header-default;
+    }
+
+    @include m(light){
+      @extend %header-primary;
+      @extend %header-white;
+    }
+
+    @include m(candle){
+      @extend %header-primary;
+      @extend %header-candle;
+    }
+
+  }
+
+  &-secondary {
+    @extend %header-secondary;
+  }
+}

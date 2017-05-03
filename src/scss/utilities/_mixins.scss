@@ -1,0 +1,105 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+
+//Create a class for each UI response with theme being class and color being the css value;
+// Look at UI Color in _config.css
+
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+// Image replacement
+
+@mixin img-replace($img, $w, $h, $disp: block) {
+	background-image: url('#{$path--rel}/#{$img}');
+	background-repeat: no-repeat;
+	width: $w;
+	height: $h;
+	display: $disp;
+}
+
+// Bem selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Grid Columns
+
+@mixin column-width {
+
+  @for $i from 1 through $grid-columns--default {
+    &__#{$i} {
+      width: 100% / $grid-columns--default * $i;
+    }
+  }
+
+  @for $i from 1 through $grid-columns--default {
+    &__#{$i}--xs {
+      width: 100% / $grid-columns--default * $i;
+    }
+  }
+
+  @media (min-width: $screen-sm--min) {
+    @for $i from 1 through $grid-columns--default {
+      &__#{$i}--sm {
+        width: 100% / $grid-columns--default * $i;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md--min) {
+    @for $i from 1 through $grid-columns--default {
+      &__#{$i}--md {
+        width: 100% / $grid-columns--default * $i;
+      }
+    }
+  }
+
+
+}
+
+@mixin column-widh--custom ($grid-columns--custom) {
+  @for $i from 1 through $grid-columns--custom {
+    &__#{$i}of#{$grid-columns--custom} {
+      width: 100% / $grid-columns--custom * $i;
+    }
+  }
+}
+
+@mixin custom-col ($numerator, $denominator) {
+
+  &__#{$numerator}o#{$denominator} {
+    width: (($numerator / $denominator) * 100%);
+  }
+
+  &__#{$numerator}o#{$denominator}-xs {
+    width: (($numerator / $denominator) * 100%);
+  }
+
+  @media (min-width: $screen-sm--min) {
+    &__#{$numerator}o#{$denominator}--sm {
+      width: (($numerator / $denominator) * 100%);
+    }
+  }
+
+  @media (min-width: $screen-md--min) {
+    &__#{$numerator}o#{$denominator}--md {
+      width: (($numerator / $denominator) * 100%);
+    }
+  }
+}

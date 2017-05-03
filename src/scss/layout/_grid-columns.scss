@@ -1,0 +1,20 @@
+// ==========================================================================
+// Grid Columns
+// ==========================================================================
+
+// Column styles
+
+[class^="col__"] {
+  float: right;
+  min-width: 1px;
+  width: 100%;
+  padding-left: floor(($grid-gutter-width / 2 ));
+  padding-right: ceil(($grid-gutter-width / 2 ));
+}
+
+// Calculate grid columns
+
+.col {
+  @include column-width;
+  @include custom-col(1,5);
+}

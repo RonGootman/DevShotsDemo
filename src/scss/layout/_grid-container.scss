@@ -1,0 +1,20 @@
+.container {
+  padding-left: floor(($grid-gutter-width / 2 ));
+  padding-right: ceil(($grid-gutter-width / 2 ));
+  @extend .centered;
+  @extend %clearfix;
+
+  @media (min-width: $screen-sm--min) {
+    width: $container--sm;
+  }
+
+  @media (min-width: $screen-md--min) {
+    width: $container--md;
+  }
+}
+
+.grid-row {
+  margin-left: ceil(($grid-gutter-width / -2));
+  margin-right: floor(($grid-gutter-width / -2));
+  @extend %clearfix;
+}

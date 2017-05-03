@@ -1,0 +1,510 @@
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  src: url("../fonts/opensanshebrew-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/opensanshebrew-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanshebrew-bold-webfont.woff") format("woff"), url("../fonts/opensanshebrew-bold-webfont.ttf") format("truetype"), url("../fonts/opensanshebrew-bold-webfont.svg#8b4b25a9e6dee2304c08fefb363a9190") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  src: url("../fonts/opensanshebrew-light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/opensanshebrew-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanshebrew-light-webfont.woff") format("woff"), url("../fonts/opensanshebrew-light-webfont.ttf") format("truetype"), url("../fonts/opensanshebrew-light-webfont.svg#1e3cbe1d61c0f2b766b8aff35f09f556") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew';
+  src: url("../fonts/opensanshebrew-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/opensanshebrew-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanshebrew-regular-webfont.woff") format("woff"), url("../fonts/opensanshebrew-regular-webfont.ttf") format("truetype"), url("../fonts/opensanshebrew-regular-webfont.svg#265e1bf8eadfa92b8d955acd546bd2c3") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container:after, .grid-row:after, .form__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.centered, .container {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans Hebrew";
+  font-weight: 400;
+  line-height: 1.4285714286;
+  font-size: 14px;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+section {
+  padding: 4.2857142857em 0;
+}
+
+input,
+textarea {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 0 15px;
+  background-color: #E6E6E6;
+  box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.075);
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  transition: 0.3s;
+}
+
+button {
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+}
+
+.grid-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class^="col__"] {
+  float: right;
+  min-width: 1px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col__1 {
+  width: 8.3333333333%;
+}
+
+.col__2 {
+  width: 16.6666666667%;
+}
+
+.col__3 {
+  width: 25%;
+}
+
+.col__4 {
+  width: 33.3333333333%;
+}
+
+.col__5 {
+  width: 41.6666666667%;
+}
+
+.col__6 {
+  width: 50%;
+}
+
+.col__7 {
+  width: 58.3333333333%;
+}
+
+.col__8 {
+  width: 66.6666666667%;
+}
+
+.col__9 {
+  width: 75%;
+}
+
+.col__10 {
+  width: 83.3333333333%;
+}
+
+.col__11 {
+  width: 91.6666666667%;
+}
+
+.col__12 {
+  width: 100%;
+}
+
+.col__1--xs {
+  width: 8.3333333333%;
+}
+
+.col__2--xs {
+  width: 16.6666666667%;
+}
+
+.col__3--xs {
+  width: 25%;
+}
+
+.col__4--xs {
+  width: 33.3333333333%;
+}
+
+.col__5--xs {
+  width: 41.6666666667%;
+}
+
+.col__6--xs {
+  width: 50%;
+}
+
+.col__7--xs {
+  width: 58.3333333333%;
+}
+
+.col__8--xs {
+  width: 66.6666666667%;
+}
+
+.col__9--xs {
+  width: 75%;
+}
+
+.col__10--xs {
+  width: 83.3333333333%;
+}
+
+.col__11--xs {
+  width: 91.6666666667%;
+}
+
+.col__12--xs {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col__1--sm {
+    width: 8.3333333333%;
+  }
+  .col__2--sm {
+    width: 16.6666666667%;
+  }
+  .col__3--sm {
+    width: 25%;
+  }
+  .col__4--sm {
+    width: 33.3333333333%;
+  }
+  .col__5--sm {
+    width: 41.6666666667%;
+  }
+  .col__6--sm {
+    width: 50%;
+  }
+  .col__7--sm {
+    width: 58.3333333333%;
+  }
+  .col__8--sm {
+    width: 66.6666666667%;
+  }
+  .col__9--sm {
+    width: 75%;
+  }
+  .col__10--sm {
+    width: 83.3333333333%;
+  }
+  .col__11--sm {
+    width: 91.6666666667%;
+  }
+  .col__12--sm {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col__1--md {
+    width: 8.3333333333%;
+  }
+  .col__2--md {
+    width: 16.6666666667%;
+  }
+  .col__3--md {
+    width: 25%;
+  }
+  .col__4--md {
+    width: 33.3333333333%;
+  }
+  .col__5--md {
+    width: 41.6666666667%;
+  }
+  .col__6--md {
+    width: 50%;
+  }
+  .col__7--md {
+    width: 58.3333333333%;
+  }
+  .col__8--md {
+    width: 66.6666666667%;
+  }
+  .col__9--md {
+    width: 75%;
+  }
+  .col__10--md {
+    width: 83.3333333333%;
+  }
+  .col__11--md {
+    width: 91.6666666667%;
+  }
+  .col__12--md {
+    width: 100%;
+  }
+}
+
+.col__1o5 {
+  width: 20%;
+}
+
+.col__1o5-xs {
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  .col__1o5--sm {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col__1o5--md {
+    width: 20%;
+  }
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item, .nav__item--selected {
+  background-color: #ffffff;
+  border-bottom: 1px dotted #4D4D4D;
+}
+
+.nav__item a, .nav__item--selected a {
+  padding: 0.4em 1.25em;
+  color: #282828;
+  display: block;
+}
+
+.nav__item--selected {
+  background-color: #FFE022;
+}
+
+h1, .header-jumbo {
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 0.7142857143em;
+}
+
+h2, .header-primary, .header-primary--default, .header-primary--light, .header-primary--candle {
+  font-size: 2.1428571429em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h4, .header-secondary {
+  font-size: 1.5714285714em;
+  margin-top: 0;
+}
+
+.header-primary--default {
+  color: #282828;
+}
+
+.header-primary--light {
+  color: #ffffff;
+}
+
+.header-primary--candle {
+  color: #FFE022;
+}
+
+.form__btn {
+  border-bottom: 3px solid #1a1a1a;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4285714286em;
+  font-family: "Open Sans Hebrew";
+}
+
+.form__input, .form__btn {
+  float: left;
+  width: 70%;
+  height: 40px;
+}
+
+.form__row {
+  margin-bottom: 0.7142857143em;
+}
+
+.form__label {
+  float: right;
+  font-weight: 400;
+  font-size: 1.1428571429em;
+  line-height: 2.5;
+  margin-bottom: 0;
+}
+
+.form__input {
+  font-weight: 200;
+  font-family: "Open Sans Hebrew";
+  color: #282828;
+}
+
+.form__input:focus {
+  border: 0;
+  background-color: #ebebeb;
+}
+
+.form__btn {
+  margin-bottom: 0;
+}
+
+.btn--default {
+  background-color: #4D4D4D;
+}
+
+.btn--success {
+  background-color: #27ae60;
+}
+
+.btn--error {
+  background-color: #E74C3C;
+}
+
+.btn--warning {
+  background-color: #e67e22;
+}
+
+.btn--info {
+  background-color: #ecf0f1;
+}
+
+.site-logo {
+  background-image: url("../img/netcraft-logo.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 30px;
+  display: block;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4285714286em;
+}
+
+.site-logo {
+  background-image: url("../img/netcraft-logo.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 30px;
+  display: block;
+}

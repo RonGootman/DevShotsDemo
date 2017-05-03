@@ -6,20 +6,20 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
     <title>Dev Shots</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rtl/3.2.0-rc2/css/bootstrap-rtl.min.css" /> -->
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body dir="rtl">
     <header class="beige-color">
       <div class="top-bar black-color">
         <div class="container">
-          <div class="row">
+          <div class="grid-row">
             <div class="col-md-8 col-sm-6">
-              <h2><span class="white-font">DEV SHOTS</span> אירוע המפתחים</h2>
+              <h2 class="header-primary--light"><span class="white-font">DEV SHOTS</span> אירוע המפתחים</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-              <h2 class="netcraft-logo">netcraft</h2>
+              <h2 class="netcraft-logo site-logo srt">netcraft</h2>
             </div>
           </div>
         </div>
@@ -27,8 +27,8 @@
       <div class="banner">
         <div class="container">
           <div class="section-content">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="grid-row">
+              <div class="col__4--md">
                 <h1 class="white-font">אירוע פיתוח בראש טוב</h1>
                 <p class="font-400">
                   לדבר על טכנולוגיות מהחזית ואתגרים שווים עם גיבורי יום-יום כמוכם
@@ -41,26 +41,26 @@
     </header>
     <nav class="hidden-sm hidden-xs">
       <h3 class="black-color">ניווט</h3>
-      <ul class="navigation">
-        <li class="navigation__item--selected active"><a href="#about">מה זה?</a></li>
-        <li><a href="#lectures" class="navigation__item">הרצאות</a></li>
-        <li><a href="#location" class="navigation__item">איפה חניה?</a></li>
-        <li><a href="#registration" class="navigation__item">הרשמה</a></li>
-        <li><a href="#practical-info" class="navigation__item">מידע שימושי</a></li>
-        <li><a href="#about-us" class="nav__item">עלינו</a></li>
+      <ul class="nav">
+        <li class="nav__item--selected"><a href="#about">מה זה?</a></li>
+        <li class="nav__item"><a href="#lectures">הרצאות</a></li>
+        <li class="nav__item"><a href="#location">איפה חניה?</a></li>
+        <li class="nav__item"><a href="#registration">הרשמה</a></li>
+        <li class="nav__item"><a href="#practical-info">מידע שימושי</a></li>
+        <li class="nav__item"><a href="#about-us">עלינו</a></li>
       </ul>
     </nav>
     <section id="lectures" class="gray1-color">
       <div class="container">
         <div class="section-content section-reset-bottom">
-          <div class="row">
-            <div class="col-xs-12 section-header">
-              <h2>6 הרצאות מרתקות וקצרות<span class="lec-timeframe">15 דקות לכל הרצאה</span></h2>
+          <div class="grid-row">
+            <div class="col__12 section-header">
+              <h2 class="header-primary--default">6 הרצאות מרתקות וקצרות<span class="lec-timeframe">15 דקות לכל הרצאה</span></h2>
               <hr class="hr-30px dotted" />
             </div>
           </div> <!-- .section-header -->
-          <div class="row grid-hr">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="grid-row">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar1.png" />
                 <div class="whitebox">
@@ -74,7 +74,7 @@
                 </div>
               </article> <!-- .whitebox -->
             </div> <!-- .col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar2.png" />
                 <div class="whitebox">
@@ -88,7 +88,7 @@
                 </div>
               </article> <!-- .whitebox -->
             </div>  <!-- .col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar3.png" />
                 <div class="whitebox">
@@ -103,11 +103,11 @@
               </article> <!-- .whitebox -->
             </div>  <!-- .col-md-4 -->
 
-            <!-- <div class="col-xs-12 clearfix hidden-sm hidden-xs" />
+            <div class="col-xs-12 clearfix hidden-sm hidden-xs" />
               <hr class="hr-60px dotted" />
-            </div> -->
+            </div>
 
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar1.png" />
                 <div class="whitebox">
@@ -121,7 +121,7 @@
                 </div>
               </article> <!-- .whitebox -->
             </div> <!-- .col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar2.png" />
                 <div class="whitebox">
@@ -135,7 +135,7 @@
                 </div>
               </article> <!-- .whitebox -->
             </div> <!-- .col-md-4 -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col__4--md col__6--sm">
               <article class="article-b-margin">
                 <img class="avatar" src="img/avatar3.png" />
                 <div class="whitebox">
@@ -149,22 +149,22 @@
                 </div>
               </article> <!-- .whitebox -->
             </div>  <!-- .col-md-4 -->
-          </div> <!-- .row -->
+          </div> <!-- .grid-row -->
         </div> <!-- .section-content -->
       </div> <!-- .container -->
     </section>
     <section id="location" class="gray2-color">
         <div class="container">
           <div class="section-content">
-            <div class="row">
+            <div class="grid-row">
               <div class="col-xs-12 section-header">
-                <h2>אז איפה שמים את האוטו <span class="font-600">ועוד כמה פרטים חשובים...</span></h2>
+                <h2 class="header-primary--default">אז איפה שמים את האוטו <span class="font-600">ועוד כמה פרטים חשובים...</span></h2>
               </div>
             </div>
-            <div class="row">
+            <div class="grid-row">
               <div class="col-md-7">
                 <article>
-                  <div class="row event-address">
+                  <div class="grid-row event-address">
                     <div class="col-xs-12">
                       <!-- <div class="bottom-line"> -->
                         <h4>הערב יערך במועדון הסאבליים</h4>
@@ -174,8 +174,8 @@
                     <div class="col-xs-12">
                       <hr />
                     </div>
-                  </div> <!-- .row .bottom-line -->
-                  <div class="row event-timing">
+                  </div> <!-- .grid-row .bottom-line -->
+                  <div class="grid-row event-timing">
                     <div class="col-md-6">
                       <p class="start-time font-400">מתכנסים בשעה:</p>
                       <p class="clock-timing font-600">18:30</p>
@@ -187,8 +187,8 @@
                     <div class="col-xs-12">
                       <hr />
                     </div>
-                  </div> <!-- .row .bottom-line -->
-                  <div class="row transportation">
+                  </div> <!-- .grid-row .bottom-line -->
+                  <div class="grid-row transportation">
                     <div class="col-sm-6">
                       <h4 class="parking">חניה</h4>
                       <hr />
@@ -214,7 +214,7 @@
                 <img  src="img/mapDevShots.jpg" alt="DevShots Conference Map"  />
                 <span><a href="#">למפה המלאה</a></span>
               </div>
-            </div> <!-- .row -->
+            </div> <!-- .grid-row -->
           </div> <!-- .section-content -->
           </div>
       </div> <!-- .container -->
@@ -222,12 +222,12 @@
     <section id="registration" class="beige-color">
       <div class="container">
         <div class="section-content">
-          <div class="row">
+          <div class="grid-row">
             <div class="col-xs-12 section-header">
-              <h2 class="highlighted-header">הרשמה</h2>
+              <h2 class="header-primary--candle">הרשמה</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="grid-row">
             <div class="col-md-6">
               <article>
                 <h4>הכניסה לא חינם אבל מספר המקומות מצומצם.</h4>
@@ -235,75 +235,75 @@
                 <hr/>
                 <p>כל הפרטים האישיים ישארו חסויים ואנחנו לא נעביר אותם לאף אחד.</p>
                 <hr/>
-                <form class="sign-up" action="#" method="post">
+                <form class="form" action="#" method="post">
                   <fieldset>
-                    <div class="sign-up__form-group clearfix">
-                      <label class="sign-up__form-group--label" for="fullname">שם מלא</label>
-                      <input id="fullname" class="form-control sign-up__form-group--input" type="text" name="fullname" placeholder="פרטי וגם משפחה" required />
+                    <div class="form__grid-row">
+                      <label class="form__label" for="fullname">שם מלא</label>
+                      <input id="fullname" class="form__input" type="text" name="fullname" placeholder="פרטי וגם משפחה" required />
                     </div>
-                    <div class="sign-up__form-group clearfix">
-                      <label class="sign-up__form-group--label" for="current-position">תפקיד</label>
-                      <input id="current-position" class="form-control sign-up__form-group--input" type="text" name="position" placeholder="מה אתם עושים ביום יום" />
+                    <div class="form__grid-row">
+                      <label class="form__label" for="current-position">תפקיד</label>
+                      <input id="current-position" class="form__input" type="text" name="position" placeholder="מה אתם עושים ביום יום" />
                     </div>
-                    <div class="sign-up__form-group clearfix">
-                      <label class="sign-up__form-group--label" for="organization">ארגון</label>
-                      <input id="organization" class="form-control sign-up__form-group--input" type="text" name="organization" placeholder="מי משלם לכם משכורת" />
+                    <div class="form__grid-row">
+                      <label class="form__label" for="organization">ארגון</label>
+                      <input id="organization" class="form__input" type="text" name="organization" placeholder="מי משלם לכם משכורת" />
                     </div>
-                    <div class="sign-up__form-group clearfix">
-                      <label class="sign-up__form-group--label" for="phone-number">מספר טלפון</label>
-                      <input id="phone-number" class="form-control sign-up__form-group--input" type="tel" name="phone-number" placeholder="או סלולרי, לנו לא אכפת" />
+                    <div class="form__grid-row">
+                      <label class="form__label" for="phone-number">מספר טלפון</label>
+                      <input id="phone-number" class="form__input" type="tel" name="phone-number" placeholder="או סלולרי, לנו לא אכפת" />
                     </div>
-                    <div class="sign-up__form-group clearfix">
-                      <label class="sign-up__form-group--label" for="friends">יש חברים?</label>
-                      <input id="friends" class="form-control sign-up__form-group--input" type="text" name="friends" placeholder="יש לי מלא אבל אני בא לבד" />
+                    <div class="form__grid-row">
+                      <label class="form__label" for="friends">יש חברים?</label>
+                      <input id="friends" class="form__input" type="text" name="friends" placeholder="יש לי מלא אבל אני בא לבד" />
                     </div>
                   </fieldset>
-                  <button type="submit" class="btn sign-up__btn">זהו! שלח אותי</button>
+                  <button type="submit" class="btn form__btn">זהו! שלח אותי</button>
                 </form>
               </article>
             </div> <!-- .col-md-6 -->
-          </div>  <!-- .row -->
+          </div>  <!-- .grid-row -->
         </div> <!-- .section-content -->
       </div> <!-- .container -->
     </section>
     <section id="practical-info" class="gray1-color">
       <div class="container">
         <div class="section-content section-reset-bottom">
-          <div class="row">
+          <div class="grid-row">
             <div class="col-xs-12">
-              <h2>מידע שימושי</h2>
+              <h2 class="header-primary--default">מידע שימושי</h2>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-15 col-sm-3 col-xs-6">
+          <div class="grid-row">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/HTML5DevShots.jpg" alt="html5 איקון" />
                 <h4>קורס HTML5</h4>
                 <p>אספנו בשבילכן את רשימות הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/UXDevShots.jpg" alt="תמונת אפיון" />
                 <h4>לומדים חווית משתמש</h4>
                 <p>אתר NETCRAFTACADEMY ללימוד חוויית משתמש</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/BlogDevShots.jpg" alt="בלוג נטקראפט" />
                 <h4>בלוג נטקראפט</h4>
                 <p>בלוג של אנשי נטקראפט על שימושיות, עיצוב, טכנולוגיה וכל הדברים המעניינים באמת</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/ContentDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
                 <p>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/DogDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
@@ -315,35 +315,35 @@
               <hr class="hr-60px dotted" />
             </div>
 
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/TriangleDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
                 <p>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/ipadDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
                 <p>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/AdaptiveWebDesignDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
                 <p>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/ContentDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
                 <p>אספנו בשבילכם את רשימת הספרים שכדאי שתקראו לפני שאתם מתחילים</p>
               </article>
             </div>
-            <div class="col-md-15 col-sm-3 col-xs-6">
+            <div class="col__105--md col__3--sm col__6--xs">
               <article class="article-b-margin">
                 <img src="img/DogDevShots.jpg" alt="html5 icon" />
                 <h4>הספרים שכדאי לקרוא</h4>
@@ -352,24 +352,24 @@
             </div>
 
 
-          </div> <!-- .row -->
+          </div> <!-- .grid-row -->
         </div> <!-- .section-content -->
       </div> <!-- .container -->
     </section>
     <footer id="about-us" class="black-color">
       <div class="footer-title-bar">
         <div class="container">
-          <div class="row">
+          <div class="grid-row">
             <div class="col-xs-12">
-              <h2>קצת עלינו</h2>
+              <h2 class="header-primary">קצת עלינו</h2>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="grid-row">
           <div class="col-md-6">
-            <div class="row">
+            <div class="grid-row">
               <div class="col-sm-4">
                 <article class="netcraft-logo">
                   <h3>netcraft</h3>
@@ -381,10 +381,10 @@
                   <p>netcraft מאפיינת, מעצבת ומפתחת פתרונות אינטרנט המאפשרים ללקוחותיה לייצר הצלחה עסקית ויתרון תחרותי בשוק בו הם פועלים.</p>
                 </article>
               </div>
-            </div> <!-- .row -->
+            </div> <!-- .grid-row -->
           </div> <!-- .col-md-6 -->
           <div class="col-md-6">
-            <div class="row">
+            <div class="grid-row">
               <div class="col-md-3">
                 <article>
                   <img src="img/TriangleFooter.jpg" alt="">
@@ -409,10 +409,10 @@
                   <p>הבלוג שלנו</p>
                 </article>
               </div>
-            </div> <!-- .row -->
+            </div> <!-- .grid-row -->
           </div> <!-- .col-md-6 -->
-        </div> <!-- .row -->
-        <div class="row">
+        </div> <!-- .grid-row -->
+        <div class="grid-row">
           <ul class="bottom-bar">
             <li>כל הזכויות שמורות לנטקראפט &copy; 2012</li>
             <li>תרימו טלפון: <a href="tel:+972987455698">987 455 698</a></li>
@@ -423,6 +423,5 @@
         </div>
       </div> <!-- .container -->
     </footer>
-    <script type="text/javascript" src="src/js/app.js"></script>
   </body>
 </html>
